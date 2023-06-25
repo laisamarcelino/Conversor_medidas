@@ -1,0 +1,94 @@
+/* Retira o estilo padrão do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a cor de fundo do corpo da página e o tamanho das letras */
+body{
+    background-color: rgb(202, 153, 248);
+    font-size: 12pt;
+}
+
+/* alinha o título e da espaçamento */
+h1{
+    text-align: center;
+    margin: 55px;
+}
+
+/* define a mesma formataçao para as seções formulário e resultado */
+#formulario, #secaoResultado{
+    border: 2px solid rgb(53, 43, 63);
+    border-radius: 10px;
+    padding: 50px;
+    margin: 0px 200px;
+    background-color: rgb(156, 143, 168);
+    
+}
+
+/* alinha em coluna os elementos do formulario */
+form{
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Faz com que os elementos dentro das divs unidadePartida e unidadeDestino fiquem em coluna */
+#unidadePartida, #unidadeDestino{
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Espaçamento para os elementos do formulario */
+#botaoConverter, .legendaForms, #botaoVoltar{
+    margin-top: 15px;
+}
+
+/* cor de fundo para as caixas de seleção e entradas do formulário */
+select, input, #botaoConverter, #botaoVoltar{
+    background-color: rgb(230, 205, 253);
+    border-radius: 7px;
+    height: 40px;
+    padding: 5px;
+}
+
+/* Define a largura dos botões */
+#botaoConverter, #botaoVoltar{
+    width: 200px;
+}
+
+/* alinha em coluna e centraliza os elementos da secaoResultado */
+#secaoResultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Espaçamento para o título e resultado da conversão */
+h3, #resultado{
+    margin-bottom: 15px;
+}
+
+/* ajusta o estilo para telas menores */
+@media screen and (max-width: 667px) {
+    #formulario, #secaoResultado{
+        margin: 0px 50px;
+        padding: 15px;
+    }
+
+    #botaoConverter, #botaoVoltar{
+        width: 70px;
+    }
+}
+
+/* ajusta o estilo para telas menores */
+@media screen and (max-width: 1024px) and (min-width: 668px){    
+    #formulario, #secaoResultado{
+        margin: 0px 100px;
+        padding: 50px;
+    }
+
+    #botaoConverter, #botaoVoltar{
+        width: 150px;
+    }
+}

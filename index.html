@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Conversor de Unidades</h1>
+        <section id="formulario">
+            <form id="formularioEnvio">
+                <label for="valor">Valor a ser convertido: </label>
+                <input type="number" id="valor" name="valor" required step="any">
+                <!-- O required indica que o campo deve ser preenchido / O step any indica que o formulario pode receber numeros decimais-->
+                <label class="legendaForms" for="categoria">Selecione a categoria de unidades medição:</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Selecione uma opção</option>
+                    <option value="comprimento">Comprimento</option>
+                    <option value="peso">Peso</option>
+                    <option value="temperatura">Temperatura</option>
+                </select>
+
+                <!-- Unidades de medida de partida  -->
+                 <div id="unidadePartida">
+                    <label class="legendaForms" for="partida">Unidade de partida:</label>
+                    <select name="partida" id="opcoesComprimento">
+                        <option value="">Selcione uma opção</option>
+                        <option value="metros">Metros</option>
+                        <option value="centimetros">Centímetros</option>
+                        <option value="polegadas">Polegadas</option>
+                    </select>
+                
+                    <select name="partida" id="opcoesPeso">
+                        <option value="">Selcione uma opção</option>
+                        <option value="kg">Quilogramas</option>
+                        <option value="gramas">Gramas</option>
+                        <option value="libras">Libras</option>
+                    </select>
+                
+                    <select name="partida" id="opcoesTemperatura">
+                        <option value="">Selcione uma opção</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fah">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+                  <!-- Unidades de medida de destino  -->
+                <div id="unidadeDestino">
+                    <label class="legendaForms" for="destino">Unidade de destino:</label>
+                    <select name="destino" id="opcoesComprimentoDestino">
+                        <option value="">Selcione uma opção</option>
+                        <option value="metros">Metros</option>
+                        <option value="centimetros">Centímetros</option>
+                        <option value="polegadas">Polegadas</option>
+                    </select>
+                
+                    <select name="destino" id="opcoesPesoDestino">
+                        <option value="">Selcione uma opção</option>
+                        <option value="kg">Quilogramas</option>
+                        <option value="gramas">Gramas</option>
+                        <option value="libras">Libras</option>
+                    </select>
+                
+                    <select name="destino" id="opcoesTemperaturaDestino">
+                        <option value="">Selcione uma opção</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="fah">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                </div>
+               <!-- centraliza o botão -->
+                <center><button type="submit" id="botaoConverter">Converter</button></center>
+            </form>
+        </section>
+
+        <section id="secaoResultado">
+            <h3>Resultado da Conversão:</h3>
+            <div id="resultado"></div>
+            <button id="botaoVoltar">Voltar</button>
+        </section>
+    </main>
+    <p>teste</p>
+</body>
+</html>
+
